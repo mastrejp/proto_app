@@ -1,0 +1,19 @@
+.articles
+  - [:notice, :errors].each do |key|
+    - if object = flash[key]
+      .notifications
+        - if object.is_a? Array
+          - object.each do |message|
+            = message
+        - else
+          = object
+  .articles__form
+    = form_for @article do |f|
+      span.articles__form__label
+        | Leave your footpoints.
+      span.articles__form__input
+        = f.text_field :content
+  ul.articles__list
+    - @articles.each do |article|
+      li
+        = article.content
