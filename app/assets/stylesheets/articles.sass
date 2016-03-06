@@ -2,17 +2,17 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-// Base setting
+// Base Style
 body
   background-color: rgba(255,192,192,100)  // #FFC0C0
   color: rgba(255,64,64,100)               // #FF4040
 
-// Messsage Components
+// Notification Messsage Components
 .notifications
   border-radius: 4px
-  border: 1px solid rgba(255,64,64,100)    // #FF4040
-  background-color: rgba(255,160,160,100)  // #FFA0A0
-  color: rgba(255,0,0,100)                 // #FF0000
+  border: 1px solid rgba(255,64,64,100)  // #FF4040
+  background-color: rgba(255,64,64,100)  // #FF4040
+  color: rgba(255,224,224,100)           // #FFE0E0
   margin-bottom: 16px
   padding: 0.5em 1em
 
@@ -29,8 +29,12 @@ body
         width: 400px
         border-radius: 4px
         border: 1px solid rgba(255,64,64,100)    // #FF4040
-        background-color: rgba(255,192,192,100)  // #FFC0C0
+        background-color: rgba(255,208,208,100)  // #FFD0D0
         color: rgba(255,64,64,100)               // #FF4040
+        &:focus
+          border: 1px solid rgba(255,96,96,100)          // #FF6060
+          outline: 1px solid rgba(255,128,128,100)       // #FF8080
+          box-shadow: 0 0 1pt 2pt rgba(255,160,160,100)  // #FFA0A0
   .articles__list
     padding: 0px
   li
