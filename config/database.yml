@@ -52,5 +52,6 @@ test:
 production:
   <<: *default
   database: proto_app_production
-  username: proto_app
-  password: <%= ENV['PROTO_APP_DATABASE_PASSWORD'] %>
+  username: root
+  password:
+  socket: /var/lib/mysql/mysql.sock
