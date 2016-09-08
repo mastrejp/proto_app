@@ -7,7 +7,7 @@ class ArticlesController < ApplicationController
 
   def create
     @article.save!
-    redirect_to root_path, notice: 'Thanks a lot :D'
+    redirect_to root_path, notice: 'Yeah! Thanks a lot :D'
   rescue
     flash.now[:errors] = 'Problem has occured... Try again.'
     render :index
